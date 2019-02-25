@@ -1,0 +1,40 @@
+!SESSION 2019-02-25 15:39:20.449 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171123-0800
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.debug 4 120 2019-02-25 15:55:39.650
+!MESSAGE Exception processing async thread queue
+!SUBENTRY 1 org.eclipse.jdt.debug 4 120 2019-02-25 15:55:39.651
+!MESSAGE Exception processing async thread queue
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.debug.core.JDIDebugPlugin$AbstractNotifier.notifyListeners(JDIDebugPlugin.java:568)
+	at org.eclipse.jdt.internal.debug.core.JDIDebugPlugin$BreakpointNotifier.notify(JDIDebugPlugin.java:657)
+	at org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.fireBreakpointRemoved(JDIDebugPlugin.java:494)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.fireRemoved(JavaBreakpoint.java:1072)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.removeFromTarget(JavaBreakpoint.java:772)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.removeAllBreakpoints(JDIDebugTarget.java:1931)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.cleanup(JDIDebugTarget.java:1884)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.disconnected(JDIDebugTarget.java:1863)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugElement.disconnected(JDIDebugElement.java:381)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugElement.throwDebugException(JDIDebugElement.java:261)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugElement.requestFailed(JDIDebugElement.java:202)
+	at org.eclipse.jdt.internal.debug.core.model.JDIDebugElement.targetRequestFailed(JDIDebugElement.java:182)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.getUnderlyingFrames(JDIThread.java:732)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.computeStackFrames(JDIThread.java:620)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.computeStackFrames(JDIThread.java:697)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.invokeComplete(JDIThread.java:1297)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.invokeFailed(JDIThread.java:1272)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.invokeFailed(JDIThread.java:1242)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.invokeMethod(JDIThread.java:1042)
+	at org.eclipse.jdt.internal.debug.core.model.JDIObjectValue.sendMessage(JDIObjectValue.java:158)
+	at org.eclipse.jdt.internal.debug.eval.ast.instructions.SendMessage.execute(SendMessage.java:57)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.Interpreter.execute(Interpreter.java:66)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable$1EvaluationRunnable.run(ASTEvaluationEngine.java:702)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread.runEvaluation(JDIThread.java:828)
+	at org.eclipse.jdt.internal.debug.eval.ast.engine.ASTEvaluationEngine$EvalRunnable.run(ASTEvaluationEngine.java:755)
+	at org.eclipse.jdt.internal.debug.core.model.JDIThread$ThreadJob.run(JDIThread.java:3529)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)

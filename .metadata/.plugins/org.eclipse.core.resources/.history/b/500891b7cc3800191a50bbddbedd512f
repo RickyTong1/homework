@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public abstract class Test_1 {
+	
+	public static void main(String...strings) {
+		
+		int i = 0;//¼ÆÊýÆ÷
+		Sqlist test = new Sqlist();
+		Scanner scan = new Scanner(System.in);
+		while(scan.hasNext()) {
+			test.sqlist[i++] = Integer.valueOf(scan.next());
+		}
+		
+		System.out.println(test.sqlist);
+	}
+}
