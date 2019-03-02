@@ -16,8 +16,14 @@ public class Test_1 {
 				break;
 			}
 		}
-		test.sort();//排序
-		test.trimRept();//去重
+		test.trimReptPro();//使用哈希表。
+		/*
+		 * 使用哈希表（n）比先排序（nlogn）后去重（n^2）效率更高。
+		 * */
+		
+//		test.sort();//排序
+//		test.trimRept();//去重
+		
 		test.show();
 	}
 }
