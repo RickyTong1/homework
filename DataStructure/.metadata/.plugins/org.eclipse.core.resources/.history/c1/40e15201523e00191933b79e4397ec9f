@@ -1,0 +1,26 @@
+package Êµ¼ù2;
+
+import java.util.Scanner;
+
+public class SetCalculate {
+	
+	public static void main(String...strings) {
+		SetElement A = new SetElement();
+		SetElement B = new SetElement();
+		Scanner scan = new Scanner(System.in);
+		
+		char[] a, b;
+		a = scan.next().toCharArray();
+		b = scan.next().toCharArray();
+		scan.close();
+		
+		for(int i = 0; i < a.length-1; i++) {
+			A.elem = a[i];
+		}
+		for(int i = 0; i < b.length -1; i++) {
+			B.elem = b[i];
+		}
+		A.setaUnion(B).show();;
+		A.intersection(B).show();;
+	}
+}

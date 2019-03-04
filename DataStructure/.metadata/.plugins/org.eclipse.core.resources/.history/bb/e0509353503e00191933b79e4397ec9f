@@ -1,0 +1,14 @@
+package Êµ¼ù2;
+
+import java.util.Scanner;
+
+public class SetCalculate {
+	
+	public static void main(String...strings) {
+		SetElement A = new SetElement();
+		SetElement B = new SetElement();
+		Scanner scan = new Scanner(System.in);
+		
+		
+	}
+}

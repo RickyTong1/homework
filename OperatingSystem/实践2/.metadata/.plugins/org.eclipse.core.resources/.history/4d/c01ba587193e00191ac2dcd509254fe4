@@ -1,0 +1,9 @@
+
+package ½ø³Ì×´Ì¬Ç¨ÒÆ;
+
+import java.util.Queue;
+
+public class Testment {
+
+	Queue<Process> standby = new Queue<Pro>();
+}

@@ -1,0 +1,7 @@
+package Êµ¼ù2;
+
+public class SetCalculate {
+	public static void main(String...strings) {
+		System.out.println("Hello world");
+	}
+}

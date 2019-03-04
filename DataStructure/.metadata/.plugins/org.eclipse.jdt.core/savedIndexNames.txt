@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+F:\Java_Workspace\DataStructure\.metadata\.plugins\org.eclipse.jdt.core
+3384513373.index
+2187996157.index

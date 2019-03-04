@@ -1,0 +1,15 @@
+
+package 进程状态迁移;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Testment {
+
+	Queue<Process> standby = new PriorityQueue<Process>();//就绪队列
+	Queue<Process> blocked = new PriorityQueue<Process>();//阻塞队列
+	Queue<Process> dead = new PriorityQueue<Process>();//消亡队列
+	
+	
+	
+}

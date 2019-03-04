@@ -1,0 +1,38 @@
+package 进程状态迁移;
+
+import java.util.AbstractQueue;
+import java.util.Iterator;
+
+public class ProcessingQueue extends AbstractQueue{
+
+	@Override
+	public boolean offer(Object arg0) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public Object peek() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public Object poll() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public Iterator iterator() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO 自动生成的方法存根
+		return 0;
+	}
+
+}

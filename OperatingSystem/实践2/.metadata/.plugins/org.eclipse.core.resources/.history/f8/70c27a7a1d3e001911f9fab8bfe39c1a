@@ -1,0 +1,33 @@
+
+package 进程状态迁移;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Testment {
+
+	class Priority 
+	Queue<Process> ready = new PriorityQueue<Process>();// 就绪队列
+	Queue<Process> blocked = new PriorityQueue<Process>();// 阻塞队列
+	Queue<Process> dead = new PriorityQueue<Process>();// 消亡队列
+
+	public boolean excute(Process p) {// 执行进程，并返回执行成功信息，进程死亡则返回false
+		p.priority--;
+		p.requestTimeSlied--;// 优先级和要求时间片减一
+		if (p.requestTimeSlied <= 0) {// 要求时间片小于零时进程消亡
+			p.statement = Statement.DEAD;
+			return false;
+		}
+		return true;
+	}
+
+	public void run(Queue<Process> ready) {
+
+		while (!ready.isEmpty())//当ready不空时
+			if (!excute(ready.peek())) {// peek()方法只检索队首元素而不取出；
+				dead.add(ready.poll());// 若返回的是false值则将该进程从就绪队列取出，并放入死亡队列。
+			}
+	}
+	
+	
+}

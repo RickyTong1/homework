@@ -1,0 +1,28 @@
+
+package 进程状态迁移;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Testment {
+
+	Queue<Process> ready = new PriorityQueue<Process>();//就绪队列
+	Queue<Process> blocked = new PriorityQueue<Process>();//阻塞队列
+	Queue<Process> dead = new PriorityQueue<Process>();//消亡队列
+	
+	
+	public void excute(Process p) {
+		p.Priority--;
+		p.RequestTimeSlied--;//优先级和要求时间片减一
+		if(p.RequestTimeSlied <= 0) {//要求时间片小于零时进程消亡
+			p.statement = Statement.DEAD;
+		}
+	}
+	
+	public Process selectProcessViaStandby(Queue<Process> ready) {
+	
+		ready.poll();
+		return null;
+		
+	}
+}
